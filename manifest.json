@@ -1,0 +1,33 @@
+{
+	"manifest_version": 2,
+	"name": "Evrima",
+	"description": "Search for Educational Materials",
+	"version": "1.0",
+	"permissions": [
+		"tabs",
+		"background",
+        "identity",
+        "notifications",
+        "storage",
+        "alarms",
+        "https://www.googleapis.com/*"
+       
+	],
+	"icons": { 
+		"16": "img/search_icon.png",
+		"48": "img/search_icon.png",
+		"128": "img/search_icon.png" 
+	},
+	"browser_action": {
+		"default_icon": {                    
+			"19": "img/search_icon.png",          
+			"38": "img/search_icon.png"          
+		}
+		
+	},
+	"background": {
+    "scripts": ["assets/js/custom.js"],
+    "persistent": false
+	}
+	
+}
